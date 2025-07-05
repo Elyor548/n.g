@@ -75,3 +75,10 @@ body {
       padding: 0 10px;
     }
   }
+
+  video {
+    display: block;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
