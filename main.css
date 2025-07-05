@@ -1,0 +1,77 @@
+body {
+     display: none; 
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    padding: 20px;
+  }
+
+
+/* Основные стили страницы */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5; /* светло-розовый фон */
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  /* Заголовок */
+  h1 {
+    margin-top: 40px;
+    font-size: 2.5rem;
+    color: #b30059; /* насыщенный розовый */
+    text-shadow: 1px 1px 2px #ffcce6;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  /* Контейнер с изображениями */
+  .guzal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+  }
+  
+  /* Стили для всех изображений */
+  .guzal img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Эффект при наведении */
+  .guzal img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+  }
+  
+  /* Анимация появления заголовка */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Адаптивность на телефонах */
+  @media (max-width: 600px) {
+    .guzal img {
+      width: 100px;
+      height: 150px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+      padding: 0 10px;
+    }
+  }
